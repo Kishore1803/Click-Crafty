@@ -11,7 +11,9 @@ function SearchBar() {
   };
 
   return (
-    <div className="search-pill d-flex align-items-center rounded shadow bg-white px-2 w-50">
+    <div className="search-pill d-flex align-items-center rounded shadow bg-white px-2">
+      
+      {/* Dropdown (hidden on mobile) */}
       <div className="dropdown d-none d-md-block">
         <button
           className="btn dropdown-toggle border-0 fw-medium"
@@ -38,11 +40,11 @@ function SearchBar() {
       {/* Input */}
       <input
         type="text"
-        className="form-control flex-grow-1 border-0 shadow-none"
+        className="form-control border-0 shadow-none search-input"
         placeholder={placeholderMap[selected]}
       />
 
-      {/* Search Button */}
+      {/* Search Icon */}
       <button className="btn border-0">
         <i className="fa-solid fa-magnifying-glass"></i>
       </button>
