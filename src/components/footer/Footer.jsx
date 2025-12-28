@@ -4,33 +4,36 @@ function Footer() {
   return (
     <footer className="bg-black text-light py-5">
       <div className="container">
-        <div className="row">
+        <div className="row g-4">
 
-          <div className="col-md-3">
+          {/* BRAND */}
+          <div className="col-12 col-md-3">
             <h5>
               <span className="fw-bold fs-4">illusbook</span>
               <span className="fw-normal fs-6"> by Goodsketches</span>
             </h5>
 
             <p className="small">
-              @ 2025 Goodsketches. All Rights Reserved.
+              © 2025 Goodsketches. All Rights Reserved.
             </p>
           </div>
 
-          <div className="col-md-2">
+          {/* CATEGORIES */}
+          <div className="col-6 col-md-2">
             <h6 className="text-secondary text-uppercase small">
               Categories
             </h6>
             <ul className="list-unstyled small">
-              <li className="mb-2"><span role="button">Festival</span></li>
-              <li className="mb-2"><span role="button">Education</span></li>
-              <li className="mb-2"><span role="button">Technology</span></li>
-              <li className="mb-2"><span role="button">Business</span></li>
-              <li><span role="button">People</span></li>
+              <li className="mb-2">Festival</li>
+              <li className="mb-2">Education</li>
+              <li className="mb-2">Technology</li>
+              <li className="mb-2">Business</li>
+              <li>People</li>
             </ul>
           </div>
 
-          <div className="col-md-2">
+          {/* INFORMATION */}
+          <div className="col-6 col-md-2">
             <h6 className="text-secondary text-uppercase small">
               Information
             </h6>
@@ -40,25 +43,27 @@ function Footer() {
                   Pricing
                 </Link>
               </li>
-              <li className="mb-2"><span role="button">Support</span></li>
-              <li><span role="button">Contact Us</span></li>
+              <li className="mb-2">Support</li>
+              <li>Contact Us</li>
             </ul>
           </div>
 
-          <div className="col-md-3">
+          {/* POLICIES */}
+          <div className="col-6 col-md-3">
             <h6 className="text-secondary text-uppercase small">
               Policies
             </h6>
             <ul className="list-unstyled small">
-              <li className="mb-2"><span role="button">Terms & Conditions</span></li>
-              <li className="mb-2"><span role="button">Privacy Policy</span></li>
-              <li className="mb-2"><span role="button">Shipping Policy</span></li>
-              <li className="mb-2"><span role="button">Cancellation & Refund</span></li>
-              <li><span role="button">Policy</span></li>
+              <li className="mb-2">Terms & Conditions</li>
+              <li className="mb-2">Privacy Policy</li>
+              <li className="mb-2">Shipping Policy</li>
+              <li className="mb-2">Cancellation & Refund</li>
+              <li>Policy</li>
             </ul>
           </div>
 
-          <div className="col-md-2">
+          {/* SOCIAL */}
+          <div className="col-6 col-md-2">
             <h6 className="text-secondary text-uppercase small">
               Get in Touch
             </h6>

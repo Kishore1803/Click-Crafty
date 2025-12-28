@@ -31,7 +31,7 @@ function Pricing() {
       </div>
 
       <div className="container my-5">
-        <div className="row g-4 justify-content-center">
+        <div className="row g-4 d-flex justify-content-center">
 
           {/* FREE PLAN */}
           <div className="col-12 col-md-6 col-lg-5">
