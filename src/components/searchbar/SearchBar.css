@@ -1,0 +1,8 @@
+.search-pill {
+  height: 50px;
+  background-color: #fff;
+}
+
+.search-pill:hover {
+  color: black;
+}
