@@ -12,13 +12,13 @@ function Footer() {
               <span className="fw-normal fs-6"> by Goodsketches</span>
             </h5>
 
-            <p className="small mb-0">
+            <p className="small">
               @ 2025 Goodsketches. All Rights Reserved.
             </p>
           </div>
 
           <div className="col-md-2">
-            <h6 className="text-secondary text-uppercase small mb-3">
+            <h6 className="text-secondary text-uppercase small">
               Categories
             </h6>
             <ul className="list-unstyled small">
@@ -31,7 +31,7 @@ function Footer() {
           </div>
 
           <div className="col-md-2">
-            <h6 className="text-secondary text-uppercase small mb-3">
+            <h6 className="text-secondary text-uppercase small">
               Information
             </h6>
             <ul className="list-unstyled small">
@@ -46,7 +46,7 @@ function Footer() {
           </div>
 
           <div className="col-md-3">
-            <h6 className="text-secondary text-uppercase small mb-3">
+            <h6 className="text-secondary text-uppercase small">
               Policies
             </h6>
             <ul className="list-unstyled small">
@@ -59,7 +59,7 @@ function Footer() {
           </div>
 
           <div className="col-md-2">
-            <h6 className="text-secondary text-uppercase small mb-3">
+            <h6 className="text-secondary text-uppercase small">
               Get in Touch
             </h6>
             <ul className="list-unstyled small">
