@@ -12,15 +12,19 @@ function Explore() {
     { id: 6, src: "/event1.jpg", pro: true },
     { id: 7, src: "/event4.jpg", pro: false },
     { id: 8, src: "/event3.jpg", pro: true },
+    { id: 5, src: "/event1.jpg", pro: false },
+    { id: 6, src: "/event2.jpg", pro: true },
+    { id: 7, src: "/event3.jpg", pro: true },
+    { id: 8, src: "/event4.jpg", pro: false }
   ];
 
   return (
-    <div className="container mt-3 mb-4">
+    <div className="container mt-3 mb-3">
       {/* Header */}
       <div className="d-flex justify-content-between align-items-center">
-        <h4 className="fw-bold mb-0">Explore Illustrations</h4>
+        <h4 className="fw-bold">Explore Illustrations</h4>
 
-        <div className="d-flex gap-2">
+        <div className="d-flex ">
           <span className="px-3 py-1 rounded bg-secondary text-light fw-medium">
             Recent
           </span>
@@ -30,7 +34,7 @@ function Explore() {
         </div>
       </div>
 
-      <div className="row mt-3 g-4">
+      <div className="row mt-2 g-4">
         {images.map((img) => (
           <div
             key={img.id}

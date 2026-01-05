@@ -13,6 +13,10 @@ function Gallery() {
     { id: 6, src: "/event1.jpg", pro: true },
     { id: 7, src: "/event4.jpg", pro: false },
     { id: 8, src: "/event3.jpg", pro: true },
+    { id: 5, src: "/event1.jpg", pro: false },
+    { id: 6, src: "/event2.jpg", pro: true },
+    { id: 7, src: "/event3.jpg", pro: true },
+    { id: 8, src: "/event4.jpg", pro: false }
   ];
 
   // Default selected image (FREE)
@@ -90,7 +94,8 @@ function Gallery() {
             key={img.id}
             onClick={() => handleImageClick(img)}
             className="position-relative border rounded-4 p-2 shadow-sm"
-            style={{ width: "200px", height: "140px", cursor: "pointer" }}
+            style={{ width: "200px", height: "140px", }}
+            role="button"
           >
             {/* PRO BADGE */}
             {img.pro && (
@@ -102,9 +107,8 @@ function Gallery() {
             <img
               src={img.src}
               alt=""
-              className={`w-100 h-100 rounded-3 ${
-                img.pro && !isProUser ? "opacity-50" : ""
-              }`}
+              className={`w-100 h-100 rounded-3 ${img.pro && !isProUser ? "opacity-50" : ""
+                }`}
               style={{ objectFit: "contain" }}
             />
           </div>
