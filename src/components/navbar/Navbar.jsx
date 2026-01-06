@@ -4,7 +4,7 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-black ps-4 pe-4">
-      
+
       <Link className="navbar-brand fw-bold fs-4" to="/">
         Illus<span className="text-light">book</span>
       </Link>
@@ -20,38 +20,63 @@ const Navbar = () => {
 
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
+
+          {/* Categories Dropdown */}
           <li className="nav-item dropdown fs-5">
-            <a
+            <span
               className="nav-link dropdown-toggle"
-              href="#"
               role="button"
               data-bs-toggle="dropdown"
             >
               Categories
-            </a>
+            </span>
 
             <ul className="dropdown-menu bg-dark drop">
-              <li><a className="dropdown-item text-light" href="#">Christmas</a></li>
-              <li><a className="dropdown-item text-light" href="#">Festivals</a></li>
-              <li><a className="dropdown-item text-light" href="#">Education</a></li>
-              <li><a className="dropdown-item text-light" href="#">Technology</a></li>
-              <li><a className="dropdown-item text-light" href="#">Business</a></li>
-              <li><a className="dropdown-item text-light" href="#">People</a></li>
+              <li>
+                <Link className="dropdown-item text-light" to="/explore?category=christmas">
+                  Christmas
+                </Link>
+              </li>
+              <li>
+                <Link className="dropdown-item text-light" to="/explore?category=festivals">
+                  Festivals
+                </Link>
+              </li>
+              <li>
+                <Link className="dropdown-item text-light" to="/explore?category=education">
+                  Education
+                </Link>
+              </li>
+              <li>
+                <Link className="dropdown-item text-light" to="/explore?category=technology">
+                  Technology
+                </Link>
+              </li>
+              <li>
+                <Link className="dropdown-item text-light" to="/explore?category=business">
+                  Business
+                </Link>
+              </li>
+              <li>
+                <Link className="dropdown-item text-light" to="/explore?category=people">
+                  People
+                </Link>
+              </li>
             </ul>
           </li>
 
           <li className="nav-item fs-5">
-            <a className="nav-link" href="#">Collections</a>
+            <Link className="nav-link" to="/collections">Collections</Link>
           </li>
 
           <li className="nav-item fs-5">
-            <a className="nav-link" href="#">
+            <Link className="nav-link" to="/ai-images">
               AI Images <span className="badge bg-primary ms-1">New</span>
-            </a>
+            </Link>
           </li>
         </ul>
 
-        <ul className="navbar-nav ms-lg-auto align-items-lg-center mt-lg-0">
+        <ul className="navbar-nav ms-lg-auto align-items-lg-center">
           <li className="nav-item me-lg-3 fs-5">
             <Link className="nav-link" to="/pricing">Pricing</Link>
           </li>
