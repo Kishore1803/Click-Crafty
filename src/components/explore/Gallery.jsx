@@ -43,7 +43,7 @@ function Gallery() {
     { id: 23, src: "/event3.jpg", pro: false, category: "people", popular: true },
     { id: 24, src: "/event1.jpg", pro: true, category: "people", popular: false }
   ];
- // 🔹 Pro user check
+  // 🔹 Pro user check
   const [isProUser, setIsProUser] = useState(false);
 
   useEffect(() => {
@@ -133,9 +133,8 @@ function Gallery() {
             <img
               src={img.src}
               alt=""
-              className={`w-100 h-100 rounded-3 ${
-                img.pro && !isProUser ? "opacity-50" : ""
-              }`}
+              className={`w-100 h-100 rounded-3 ${img.pro && !isProUser ? "opacity-50" : ""
+                }`}
               style={{ objectFit: "contain" }}
             />
           </div>
